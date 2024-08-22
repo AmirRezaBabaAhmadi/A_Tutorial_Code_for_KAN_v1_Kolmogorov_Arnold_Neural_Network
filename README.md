@@ -21,26 +21,31 @@ To run the code, you will need Python and the following libraries:
 - `torchvision`
 - `tqdm`
 
-Code Explanation
-KAN Model Definition
-The KAN class implements the Kolmogorov Arnold Neural Network, which consists of several KANLinear layers. Each layer integrates B-splines for flexible and smooth interpolation.
+## Code Explanation
 
-Key Components:
+### KAN Model Definition
 
---KANLinear: A custom linear layer utilizing B-splines for transformations.
---KAN: A sequential model composed of multiple KANLinear layers.
---Training and Evaluation
---The training script performs the following steps:
+The `KAN` class implements the Kolmogorov Arnold Neural Network, which consists of several `KANLinear` layers. Each layer integrates B-splines for flexible and smooth interpolation.
 
---Data Loading: Loads and preprocesses the MNIST dataset.
---Model Initialization: Sets up the KAN model, optimizer, and learning rate scheduler.
---Training Loop: Trains the model for a specified number of epochs and updates learning rates.
---Validation: Evaluates the model’s performance on a validation set.
+**Key Components:**
 
-Contributing
+- **`KANLinear`**: A custom linear layer utilizing B-splines for transformations.
+- **`KAN`**: A sequential model composed of multiple `KANLinear` layers.
+
+### Training and Evaluation
+
+The training script performs the following steps:
+
+- **Data Loading**: Loads and preprocesses the MNIST dataset.
+- **Model Initialization**: Sets up the KAN model, optimizer, and learning rate scheduler.
+- **Training Loop**: Trains the model for a specified number of epochs and updates learning rates.
+- **Validation**: Evaluates the model’s performance on a validation set.
+
+## Contributing
+
 Feel free to submit issues or pull requests if you find bugs or have suggestions for improvements. Please follow the standard GitHub contribution guidelines.
 
+## Acknowledgements
 
-Acknowledgements
-PyTorch and torchvision libraries for providing the framework and datasets.
-The original authors and contributors of the Kolmogorov Arnold Neural Network concept. (Read more:https://arxiv.org/abs/2404.19756#)
+- PyTorch and torchvision libraries for providing the framework and datasets.
+- The original authors and contributors of the Kolmogorov Arnold Neural Network concept. [Read more](https://arxiv.org/abs/2404.19756#)
