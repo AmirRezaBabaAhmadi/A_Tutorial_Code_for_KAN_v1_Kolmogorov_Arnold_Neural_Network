@@ -27,20 +27,19 @@ The KAN class implements the Kolmogorov Arnold Neural Network, which consists of
 
 Key Components:
 
-KANLinear: A custom linear layer utilizing B-splines for transformations.
-KAN: A sequential model composed of multiple KANLinear layers.
-Training and Evaluation
-The training script performs the following steps:
+--KANLinear: A custom linear layer utilizing B-splines for transformations.
+--KAN: A sequential model composed of multiple KANLinear layers.
+--Training and Evaluation
+--The training script performs the following steps:
 
-Data Loading: Loads and preprocesses the MNIST dataset.
-Model Initialization: Sets up the KAN model, optimizer, and learning rate scheduler.
-Training Loop: Trains the model for a specified number of epochs and updates learning rates.
-Validation: Evaluates the model’s performance on a validation set.
+--Data Loading: Loads and preprocesses the MNIST dataset.
+--Model Initialization: Sets up the KAN model, optimizer, and learning rate scheduler.
+--Training Loop: Trains the model for a specified number of epochs and updates learning rates.
+--Validation: Evaluates the model’s performance on a validation set.
+
 Contributing
 Feel free to submit issues or pull requests if you find bugs or have suggestions for improvements. Please follow the standard GitHub contribution guidelines.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 Acknowledgements
 PyTorch and torchvision libraries for providing the framework and datasets.
